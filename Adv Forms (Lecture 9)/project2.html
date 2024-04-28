@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Job Application</h1>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email">
+        <br>
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone">
+        <br>
+        <label for="resume">Resume:</label>
+        <br>
+        <input type="file" id="resume">
+        <br>
+        <label for="exp">Experinece (years):</label>
+        <br>
+        <input type="number" id="exp" min="0" max="50">
+        <br>
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" id="html">
+            <br>
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css">
+            <br>
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="js">
+            <br>
+            <label for="js">JavaScript</label>
+        </fieldset>
+        <label for="edu">Highest Education:</label>
+        <br>
+        <select id="edu">
+            <option value="High School">High School</option>
+            <option value="UG">Under Graduate</option>
+            <option value="PG">Post Graduate</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Availability</legend>
+            <input type="radio" id="full">
+            <br>
+            <label for="full">Full Time</label>
+            <br>
+            <input type="radio" id="part">
+            <br>
+            <label for="part">Part-Time</label>
+        </fieldset>
+        <br>
+        <label for="add">Additonal Comments:</label>
+        <br>
+        <textarea name="additional comment" id="add" cols="30" rows="10"></textarea>
+        <br>
+        <input type="button" value="Submit">
+
+    </form>
+</body>
+</html>
