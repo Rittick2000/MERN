@@ -1,0 +1,9 @@
+ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.active-link{
+    color: blue;
+    background-color: brown;
+}

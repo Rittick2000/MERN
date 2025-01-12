@@ -2,7 +2,7 @@ const name=document.querySelector('h1');
 
 const stop=setTimeout(()=>{
     name.innerHTML="SDE@ENPH";
-},3000);
+},1);
 
 const button=document.querySelector('button');
 button.addEventListener('click',()=>{

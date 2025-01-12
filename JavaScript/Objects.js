@@ -20,7 +20,7 @@ obj.Name="Hi";
 obj.greeting=function(){
     console.log("test print");
 };
-// console.log(obj.greeting());
+ console.log(obj.greeting());
 
 
 

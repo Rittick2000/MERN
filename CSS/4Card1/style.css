@@ -1,0 +1,21 @@
+.body{
+    background-color: #6CB4EE;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.card{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+}

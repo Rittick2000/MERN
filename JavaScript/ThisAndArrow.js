@@ -35,7 +35,7 @@ arrowfunction();
 // Implicite function
 
 const temp= (num1,num2)=> num1+num2;
-console.log(temp(2,3)); // 7
+console.log(temp(2,3)); // 5
 
 const obj1=()=>{name: "Rittick"};
 console.log(obj1());  // undefined

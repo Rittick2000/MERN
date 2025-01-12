@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .btn {
+        background-color: brown;
+        width: 180px;
+        height: 80px;
+        border: solid rgb(198, 18, 102) 5px;
+        border-radius: 5px;
+      }
+      @media (max-width: 400px) {
+        .container {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <button class="btn">First Button</button>
+        <button class="btn">Second Button</button>
+      </div>
+      <div class="box2">
+        <img
+          src="../../HTML/image.png"
+          alt="img"
+          width="200px"
+          height="200px"
+        />
+      </div>
+    </div>
+  </body>
+</html>

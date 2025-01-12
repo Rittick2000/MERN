@@ -74,6 +74,8 @@ const promiseFive=new Promise((resolve,reject)=>{
     },1000);
 });
 
+// Handeling promise using "async await", (Alternative of .then)
+// "async await" does not handle error, to handle error we use "try catch"
 async function consumePromiseFive(){
     try {
         const response=await promiseFive
