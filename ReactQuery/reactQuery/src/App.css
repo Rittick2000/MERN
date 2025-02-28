@@ -1,0 +1,23 @@
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightSideNav{
+  display: flex;
+  list-style-type: none;
+  width: 30vw;
+  justify-content: space-between;
+  padding-right: 5vw;
+}
+
+.linkStyle{
+  text-decoration: none;
+  color: rgb(92, 121, 121);
+}
+
+.linkStyle:hover{
+  color: blue;
+}
