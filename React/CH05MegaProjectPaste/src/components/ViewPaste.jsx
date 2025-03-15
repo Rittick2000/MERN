@@ -27,11 +27,11 @@ function ViewPaste() {
           value={title}
           disabled
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full text-black border border-input rounded-md p-2"
+          className="w-full text-black border border-input rounded-md p-2 shadow-[0_3px_10px_rgb(0,0,0,0.3)]"
         />
 
         <div
-          className={`w-full flex flex-col items-start relative rounded bg-opacity-10 border border-[rgba(128,121,121,0.3)] backdrop-blur-2xl`}
+          className={`w-full flex flex-col items-start relative rounded bg-opacity-10 border border-[rgba(128,121,121,0.3)] backdrop-blur-2xl shadow-[0_3px_10px_rgb(0,0,0,0.3)]`}
         >
           <div
             className={`w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-[rgba(128,121,121,0.3)]`}

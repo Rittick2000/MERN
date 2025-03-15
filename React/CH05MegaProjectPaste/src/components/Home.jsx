@@ -14,8 +14,7 @@ function Home() {
   const pastes = useSelector((state) => state.paste.pastes);
 
   function createPaste() {
-    if(title=="" || value=="")
-    {
+    if (title == "" || value == "") {
       toast.error("Titile or Value cannot be empty");
       return;
     }
@@ -52,36 +51,38 @@ function Home() {
   return (
     <div className="w-full h-full py-10 max-w-[1200px] mx-auto px-5 lg:px-0">
       <div className="flex flex-col gap-y-5 item-start">
-        <div className="w-full flex flex-row gap-x-4 justify-start items-center">
+        <div className="w-full flex flex-row gap-x-4 justify-between items-center">
           <input
             type="text"
-            placeholder="enter your title"
+            placeholder="Enter your title..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             className={`${
-              pasteId ? "w-[70%]" : "w-[75%]"
-            } text-black border border-inherit rounded-md p-2`}
+              pasteId ? "w-[80%]" : "w-[85%]"
+            } text-black border border-inherit rounded-md p-2 shadow-[0_3px_10px_rgb(0,0,0,0.3)]`}
           />
 
-          <button
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700"
-            onClick={createPaste}
-          >
-            {pasteId ? "Update Paste" : "Create My Paste"}
-          </button>
-
-          {pasteId && (
+          <div className="flex justify-between">
             <button
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700"
-              onClick={resetPaste}
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+              onClick={createPaste}
             >
-              <PlusCircle size={20} />
+              {pasteId ? "Update Paste" : "Create My Paste"}
             </button>
-          )}
+
+            {pasteId && (
+              <button
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+                onClick={resetPaste}
+              >
+                <PlusCircle size={20} />
+              </button>
+            )}
+          </div>
         </div>
 
         <div
-          className={`w-full max-w-[1200px] flex flex-col items-start relative rounded bg-opacity-10 border border-[rgba(128,121,121,0.3)] backdrop-blur-2xl`}
+          className={`w-full max-w-[1200px] flex flex-col items-start relative rounded bg-opacity-10 border border-[rgba(128,121,121,0.3)] backdrop-blur-2xl shadow-[0_3px_10px_rgb(0,0,0,0.3)]`}
         >
           <div
             className={`w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-[rgba(128,121,121,0.3)]`}
@@ -118,7 +119,7 @@ function Home() {
             placeholder="Write Your Content Here..."
             onChange={(e) => setValue(e.target.value)}
             rows={20}
-            style={{caretColor: '#000'}}
+            style={{ caretColor: "#000" }}
             className="w-full p-3 focus-visible:ring-0"
           />
         </div>
