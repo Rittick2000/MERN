@@ -5,7 +5,8 @@ function App() {
 
   const [count,setCount]= useState(0);
 
-  function handleClick(){
+  function handleClick(event){
+    console.log("event=",event);
     setCount(count+1);
   }
   return (
@@ -17,7 +18,7 @@ function App() {
       </Card>
       
       <Button 
-      handleClick={handleClick}
+      handleClick={()=>handleClick(event)}
       text="Click Me"
       >
         <p>Count={count}</p>

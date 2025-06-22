@@ -48,7 +48,7 @@ router.get("/student", auth, isStudent, (req, res) => {
 });
 
 router.get("/admin", auth, isAdmin, (req, res) => {
-  consolelog("inside admin page");
+  console.log("inside admin page");
   res.send("in admin");
 });
 module.exports = router;

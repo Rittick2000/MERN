@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     console.log("connecting...")
-    await mongoose.connect(
-      "mongodb+srv://RittickTest:Test123@cluster0.du37l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    const conn=await mongoose.connect(
+      `mongodb+srv://Rittick-VSCode:Rittick123@cluster0.du37l.mongodb.net/`,
       {
-        useNewUrlParser: true,
+        useNewUrlParser: true, 
       }
     );
     console.log(`mongoDB Connected`);
