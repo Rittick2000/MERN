@@ -80,9 +80,13 @@ h1 {
   transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* .stats-container{
-    display: none;
-} */
+.stats-container{
+    margin-top: 2rem;
+}
+
+.number-display{
+    margin-top: 1rem;
+}
 
 .circle {
   width: 120px;
@@ -96,7 +100,7 @@ h1 {
   font-size: 1rem;
   color: white;
   font-weight: 700;
-  background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+  background: conic-gradient(#45a049 var(--progress-degree, 0%), #283a2e 0%);
 }
 
 .circle span {
@@ -110,18 +114,35 @@ h1 {
   flex-wrap: wrap;
 }
 
+.progress-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solve-display{
+    margin-top: 2rem;
+}
+
 .stats-cards {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .card {
-  background-color: rgb(109, 154, 194);
-  width: 200px;
-  max-width: 290px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  background: conic-gradient(#45a049 var(--progress-degree, 0%), #283a2e 0%);
+  width: 250px;
+  max-width: 400px;
   padding: 20px;
   border-radius: 10px;
   font-size: 1rem;

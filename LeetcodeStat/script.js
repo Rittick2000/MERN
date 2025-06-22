@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     function updateProgress(solved, total, label, circle){
         const progressDegree=(solved/total)*100;
         circle.style.setProperty("--progress-degree",`${progressDegree}%`);
-        label.textContent=`${solved}/${total}`;
+        label.textContent=`${solved}/${total} Solved`;
     }
 
     function displayUsereData(data){
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         const cardsData=[
             {
-                label:"Overall Submission",
+                label:"Total Problems Solved",
                 value:totalSolved
             },
             {
