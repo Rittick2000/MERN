@@ -14,10 +14,8 @@ function App() {
   };
 
   return (
-    <counterContext.Provider value={{count}}>
-      <Home></Home>
-      <button onClick={Increment}>Increment</button>
-      <button onClick={Decrement}>Decrement</button>
+    <counterContext.Provider value={{count,Increment,Decrement}}>
+      <Home/>
     </counterContext.Provider>
   );
 }

@@ -3,7 +3,7 @@ import Data from './Data'
 
 function Home() {
   return (
-    <Data></Data>
+    <Data/>
   )
 }
 

@@ -8,7 +8,7 @@ function App() {
   // useCallBack cache an callBack(function) and useMemo cache an value
   const fun=useCallback(()=>{
     console.log("Hii");
-  },count)
+  },[])
   // without useCallback child will re-render 
 
   return (

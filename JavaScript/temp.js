@@ -1,6 +1,7 @@
-console.log("First");
-async function abc(){
-     setTimeout(()=>console.log("second"),1000);
+function abc()
+{
+return function (){
+     console.log("hee");
 }
-abc();
-console.log("third");
+}
+abc()();
